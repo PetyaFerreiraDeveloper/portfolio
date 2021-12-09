@@ -1,5 +1,5 @@
 import { RiComputerLine } from 'react-icons/ri'
-import { IService, ISkill } from './type'
+import { IProject, IService, ISkill } from './type'
 import { FaServer } from 'react-icons/fa'
 import { AiOutlineAntDesign, AiOutlineApi } from 'react-icons/ai'
 import { MdDeveloperMode } from 'react-icons/md'
@@ -80,7 +80,7 @@ export const tools: ISkill[] = [
     },
     {
         name: 'Photoshop',
-        level: '20%',
+        level: '40%',
         Icon: BsCircleFill
     },
     {
@@ -93,5 +93,51 @@ export const tools: ISkill[] = [
         level: '70%',
         Icon: BsCircleFill
     },
-    
+
+]
+
+
+export const projects: IProject[] = [
+    {
+        id: 1,
+        name: 'Barista Cup',
+        description: 'This app was build for a coding challenge',
+        image_path: '/images/barista.png',
+        deployed_url: 'https://petyaferreiradeveloper.github.io/brown-rabbit-github/',
+        github_url: 'https://github.com/PetyaFerreiraDeveloper/brown-rabbit-github',
+        category: ['javascript'],
+        key_techs: ['javascript', 'css', 'html'],
+    },
+    {
+        id: 2,
+        name: 'Hosting Site',
+        description: 'This app is a hosting site',
+        image_path: '/images/hosting.png',
+        deployed_url: 'https://petyaferreiradeveloper.github.io/brown-rabbit-github/',
+        github_url: 'https://github.com/PetyaFerreiraDeveloper/brown-rabbit-github',
+        category: ['javascript'],
+        key_techs: ['javascript', 'css', 'html'],
+    },
+    {
+        id: 3,
+        name: 'To-do List',
+        description: 'This app is an interactive to do list',
+        image_path: '/images/to-do-list.png',
+        deployed_url: 'https://petyaferreiradeveloper.github.io/brown-rabbit-github/',
+        github_url: 'https://github.com/PetyaFerreiraDeveloper/brown-rabbit-github',
+        category: ['javascript'],
+        key_techs: ['javascript', 'css', 'html'],
+    },
+    {
+        id: 4,
+        name: 'Portfolio',
+        description: 'This is my portfolio page',
+        image_path: '/images/portfolio.png',
+        deployed_url: 'https://petyaferreiradeveloper.github.io/brown-rabbit-github/',
+        github_url: 'https://github.com/PetyaFerreiraDeveloper/brown-rabbit-github',
+        category: ['nextjs'],
+        key_techs: ['nextjs', 'typescript', 'tailwind'],
+    },
+
+
 ]

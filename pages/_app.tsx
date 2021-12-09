@@ -1,9 +1,11 @@
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import '../styles/globals.css'
-import { ThemeProvider } from 'next-themes'
+import { ThemeProvider } from 'next-themes';
+import { AnimatePresence } from 'framer-motion';
+import { Router } from 'next/router';
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router }) {
   return (
     <ThemeProvider attribute="class">
 
@@ -13,7 +15,11 @@ function MyApp({ Component, pageProps }) {
         </div>
         <div className="flex flex-col col-span-12 overflow-hidden bg-white lg:col-span-9 rounded-2xl dark:bg-dark-500 shadow-custom-light dark:shadow-custom-dark">
           <Navbar />
-          <Component {...pageProps} />
+          <AnimatePresence exitBeforeEnter>
+
+            <Component {...pageProps} key={router.route} />
+          </AnimatePresence>
+
         </div>
       </div>
     </ThemeProvider>
