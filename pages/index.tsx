@@ -3,6 +3,7 @@ import ServiceCard from '../components/ServiceCard';
 import { services } from '../data';
 import { motion } from 'framer-motion'
 import { fadeInUp, routeAnimation, stagger } from '../animations';
+import Head from 'next/head'
 
 
 const index = ({endpoint}) => {
@@ -16,6 +17,10 @@ const index = ({endpoint}) => {
       exit = 'exit'
       className="flex flex-col flex-grow px-6 pt-1"
     >
+      <Head>
+        <title>Web Developer | Portfolio</title>
+      </Head>
+      
       <h5 className="my-3 font-medium">I am currently pursuing a Software Engineer education from Software University with main focus on JavaScript. I have 1+ year of experience in Web Development, where I have built several small one page applications to practise newly learned programming skills. </h5>
       <div
         className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100"

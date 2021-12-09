@@ -45,9 +45,9 @@ const Sidebar = () => {
             </a>
             {/* // social icons */}
             <div className="flex justify-around w-9/12 m-auto my-5 text-myColor md:w-full ">
-                <a href=""><AiFillGithub className="w-8 h-8 cursor-pointer" /></a>
-                <a href=""><AiFillLinkedin className="w-8 h-8 cursor-pointer" /></a>
-                <a href=""><AiFillYoutube className="w-8 h-8 cursor-pointer" /></a>
+                <a href="https://github.com/PetyaFerreiraDeveloper" aria-label="Github"><AiFillGithub className="w-8 h-8 cursor-pointer" /></a>
+                <a href="https://www.linkedin.com/in/petyaferreira/" aria-label="LinkedIn"><AiFillLinkedin className="w-8 h-8 cursor-pointer" /></a>
+                <a href="https://www.youtube.com/channel/UCt1QTbHaFvCWsAsR34jLzrQ" aria-label="Youtube"><AiFillYoutube className="w-8 h-8 cursor-pointer" /></a>
             </div>
             {/* // address */}
             <div

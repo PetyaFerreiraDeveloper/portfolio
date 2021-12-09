@@ -1,6 +1,7 @@
 
 import { motion } from "framer-motion"
-import { useState } from "react"
+import Head from "next/head"
+import React, { useState } from "react"
 import { fadeInUp, routeAnimation, stagger } from "../animations"
 import ProjectCard from "../components/ProjectCard"
 import ProjectsNavbar from "../components/ProjectsNavbar"
@@ -11,7 +12,7 @@ const Projects = () => {
     const [projects, setProjects] = useState(projectsData);
     const [active, setActive] = useState('all');
 
-    const [showDetail, setShowDetail] = useState<number | null>(null)
+    const [showDetail, setShowDetail] = useState<number | null>(null)
 
     const handlerFilterCategory = (category: Category | 'all') => {
         if (category === 'all') {
@@ -32,8 +33,11 @@ const Projects = () => {
             variants={routeAnimation}
             initial='initial'
             animate='animate'
-            exit = 'exit'
+            exit='exit'
         >
+            <Head>
+                <title>Web Developer | Projects</title>
+            </Head>
             <ProjectsNavbar handlerFilterCategory={handlerFilterCategory} active={active} />
             <motion.div
                 variants={stagger}
