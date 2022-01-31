@@ -21,7 +21,7 @@ const index = ({endpoint}) => {
         <title>Web Developer | Portfolio</title>
       </Head>
       
-      <h5 className="my-3 font-medium">I am currently pursuing a Software Engineer education from Software University with main focus on JavaScript. I have 1+ year of experience in Web Development, where I build one page applications to practise newly learned programming skills. </h5>
+      <h5 className="my-3 font-medium">I am currently pursuing a Software Engineer education from Software University with main focus on JavaScript. I have more than an year of experience in Web Development, where I build one page applications to practise newly learned programming skills. </h5>
       <div
         className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100"
         style={{ marginLeft: '-1.5rem', marginRight: '-1.5rem' }}>
